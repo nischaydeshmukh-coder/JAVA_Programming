@@ -48,7 +48,7 @@ class Pattern
         }  
     } 
 }
-class program30_2
+class program30_3
 {
     public static void main(String[] args) 
     { 
@@ -66,4 +66,5 @@ class program30_2
     
          
     } 
+
 }
