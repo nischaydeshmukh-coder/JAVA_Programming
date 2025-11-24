@@ -1,4 +1,4 @@
-//Input :  iRow = 5  iCol = 5
+//Input :  iRow = 4  iCol = 4
 //Output :
 //          *   *   *   *    
 //          *   *   *   #
@@ -24,18 +24,23 @@ class Pattern
     { 
         int i = 0, j = 0;
         
-        System.out.println("Unable to ");
+        if(iRow != iCol)
+        {
+            System.out.println("Invalid Input");
+            System.out.println("Row Number and Column number should be same");
+            return;
+        }
         for(i = 1; i <= iRow; i++)
         {  
             for(j = 1;j <= iCol; j++)
             {
-                if(i == 3 && j >= 3 || i==4 && j>= 2 || i == 2 && j >= 4 )
+                if(j <= iCol-i+1 )
                 {
-                    System.out.print("#\t");
+                    System.out.print("*\t");
                 }
                 else
                 {
-                    System.out.print("*\t");
+                    System.out.print("#\t");
                 }
             }
             System.out.println();
