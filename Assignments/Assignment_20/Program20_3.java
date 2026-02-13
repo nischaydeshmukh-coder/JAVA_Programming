@@ -14,7 +14,7 @@ class Logic
         int sum = 0;
         for(int i = 1; i<= num/ 2; i++)
         {
-            if(num % 1 == 0)
+            if(num % i == 0)
             {
                 sum = sum + i;
             }
@@ -36,4 +36,5 @@ class Program20_3
         Logic obj = new Logic();
         obj.checkPerfect(6);
     }
+
  }
